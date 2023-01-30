@@ -1,0 +1,173 @@
+
+@import"colors.scss";
+
+.cart{
+    width: 100%;
+    margin: 2rem 0rem;
+    display: flex;
+}
+
+.cartItems{
+ display: flex;
+ flex-direction: column;
+ width: 70%;
+ 
+
+}
+.cartBox{
+    height: 10rem;
+    margin: 2rem;
+     background-color: $secondary;
+     color: black;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 1rem;
+     
+
+      div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         
+    img{
+        width: 5rem;
+        height: 5rem;
+        object-fit: contain;
+       
+    }
+
+    div{
+       padding: 0.2rem;
+       width: 14rem;
+            p{
+                //width: 40%;
+                font-size: 0.8rem;
+              
+            }
+        
+    }
+
+    h4{
+        font-size: 1.10rem;
+    }
+    
+    button{
+         
+        width: 3rem;
+        height: 2rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 5px;  
+        background-color: $primaryDark;
+        color: $secondary;
+    }
+    a{
+        text-decoration: none;
+        cursor: pointer;
+        padding: 0.5rem;
+        svg{
+            font-size: 1.50rem;
+            color: $primaryDark;
+            
+        }
+    }
+
+  }
+}
+
+.quantity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 3rem;
+    height: 2rem;
+    background-color: $secondary;
+   
+    border-radius: 5px; 
+    margin: 0rem 0.5rem;
+    font-weight: bold;
+    background-color: $primaryDark;
+        color: $secondary;
+}
+.priceBox{
+    width: 30%;
+    height: 20rem;
+    margin: 2rem 0rem;
+    border-left: 2px solid $secondary;
+   // background-color: $secondary;
+    div{
+        margin: 1rem 1rem;
+        display: flex;
+        justify-content: space-between;
+
+        h4{
+            font-weight: bold;
+            color: rgb(218, 213, 213)
+        }
+    }
+
+}
+
+ @media only screen and (max-width:1024px) {
+  
+    .cartBox{
+
+        div{
+            button{
+                width: 1.20rem;
+                height: 1.20rem;
+            }
+            img{
+                width: 2rem;
+                height: 2rem;
+            }
+            div{
+                overflow-y: auto;
+                p{
+
+                }
+            }
+            h4{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .quantity{
+        width: 1.20rem;
+        height: 1.20rem;
+        font-size: 0.8rem;
+    }
+ 
+    
+ }
+
+ @media only screen and (max-width:700px){
+    .cart{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+   .cartItems{
+    width: 100%
+   }
+   .cartBox{
+    margin: 0.8rem;
+    flex-direction: column;
+   }
+
+    .priceBox{
+       width: 100%;
+        border: none;
+        
+    }
+    .cart-Box1{
+        flex-direction: column;
+    }
+ }
